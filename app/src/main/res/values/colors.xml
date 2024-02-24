@@ -5,4 +5,6 @@
     <color name="grey">#808080</color>
     <color name="red_mix_pink">#F28585</color>
     <color name="transparent">#80000000</color>
+    <color name="begie">#FFF7F1</color>
+    <color name="light_pink">#FCE8E3</color>
 </resources>
