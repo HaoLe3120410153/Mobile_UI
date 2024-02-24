@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mobile_Android_FoodOrder</string>
+    <string name="order_button_description">Đặt hàng</string>
+    <string name="notification_button_description">Thông báo</string>
+    <string name="account_button_description">Tài khoản</string>
+    <string name="home_button_description">Trang chủ</string>
+
+</resources>
