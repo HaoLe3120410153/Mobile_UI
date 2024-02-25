@@ -1,5 +1,0 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <corners android:radius="2dp" /> <!-- Điều chỉnh bán kính cong tại đây -->
-    <solid android:color="@color/red_mix_pink" /> <!-- Màu nền của nút -->
-</shape>

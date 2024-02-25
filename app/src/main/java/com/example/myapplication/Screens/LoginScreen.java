@@ -15,7 +15,6 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-
         Button buttonToSignupScreen = findViewById(R.id.button_to_signinscreen);
         buttonToSignupScreen.setOnClickListener(new View.OnClickListener() {
             @Override
