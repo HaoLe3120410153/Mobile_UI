@@ -20,7 +20,7 @@ public class StartAppScreen extends AppCompatActivity {
         buttonToMainScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(StartAppScreen.this, MainScreen.class);
+                Intent intent = new Intent(StartAppScreen.this, MainActivity.class);
                 startActivity(intent);
             }
         });
