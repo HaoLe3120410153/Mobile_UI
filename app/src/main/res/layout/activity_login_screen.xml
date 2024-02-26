@@ -75,7 +75,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button_to_signinscreen"
+            android:id="@+id/button_to_signupscreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"

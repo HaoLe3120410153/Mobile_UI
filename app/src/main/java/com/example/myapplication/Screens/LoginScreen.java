@@ -15,7 +15,7 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-        Button buttonToSignupScreen = findViewById(R.id.button_to_signinscreen);
+        Button buttonToSignupScreen = findViewById(R.id.button_to_signupscreen);
         buttonToSignupScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +29,7 @@ public class LoginScreen extends AppCompatActivity {
         buttonToMainScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginScreen.this, MainScreen.class );
+                Intent intent = new Intent(LoginScreen.this, MainActivity.class );
                 startActivity(intent);
             }
         });

@@ -35,10 +35,6 @@
             android:name=".Screens.LoginScreen"
             android:exported="true" />
 
-        <activity
-            android:name=".Screens.MainScreen"
-            android:exported="true" />
-
     </application>
 
 </manifest>
