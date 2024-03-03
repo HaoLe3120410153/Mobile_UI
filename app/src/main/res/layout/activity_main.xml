@@ -6,11 +6,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Screens.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:background="@color/red_mix_pink"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/image_button1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Button 1"/>
+
+        <!-- TextView -->
+        <TextView
+            android:id="@+id/text_button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="ĐỒ ĂN NÈ"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="32sp" />
+
+        <!-- ImageButton 3 -->
+        <ImageButton
+            android:id="@+id/image_button3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_cart"
+            android:contentDescription="Button 3"/>
+    </LinearLayout>
+
+    <!-- FrameLayout -->
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_title" />
 
+    <!-- Bottom Navigation View -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"

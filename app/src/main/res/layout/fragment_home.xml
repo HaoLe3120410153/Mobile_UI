@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.home_fragment">
+    tools:context=".fragment.fragment_home">
 
     <ScrollView
         android:layout_margin="8dp"
@@ -55,7 +55,7 @@
                 android:alignmentMode="alignMargins"
                 android:columnOrderPreserved="false"
                 android:layout_margin="8dp">
-                <Button
+                <ImageView
                     android:id="@+id/button_to_bestseller_screen"
                     android:layout_margin="5dp"
                     android:layout_width="0dp"
@@ -63,9 +63,8 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     android:background="@drawable/img_button_bestseller"
-                    android:text="Best Seller"
                     android:radius="20dp"/>
-                <Button
+                <ImageView
                     android:id="@+id/button_to_order_screen"
                     android:layout_margin="5dp"
                     android:layout_width="0dp"
@@ -74,7 +73,7 @@
                     android:layout_rowWeight="1"
                     android:background="@drawable/img_button_order"
                     android:text="Order"/>
-                <Button
+                <ImageView
                     android:id="@+id/button_to_sale_screen"
                     android:layout_margin="5dp"
                     android:layout_width="0dp"
@@ -83,7 +82,7 @@
                     android:layout_rowWeight="1"
                     android:background="@drawable/img_button_sale"
                     android:text="Sale"/>
-                <Button
+                <ImageView
                     android:id="@+id/button_to_store_screen"
                     android:layout_margin="5dp"
                     android:layout_width="0dp"
