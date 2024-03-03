@@ -54,28 +54,30 @@
                 android:rowCount="2"
                 android:alignmentMode="alignMargins"
                 android:columnOrderPreserved="false"
-                android:layout_margin="8dp">
+                android:layout_margin="3dp">
+
                 <ImageView
                     android:id="@+id/button_to_bestseller_screen"
-                    android:layout_margin="5dp"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="2dp"
                     android:background="@drawable/img_button_bestseller"
-                    android:radius="20dp"/>
+                    android:radius="20dp" />
+
                 <ImageView
                     android:id="@+id/button_to_order_screen"
-                    android:layout_margin="5dp"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="2dp"
                     android:background="@drawable/img_button_order"
-                    android:text="Order"/>
+                    android:text="Order" />
                 <ImageView
                     android:id="@+id/button_to_sale_screen"
-                    android:layout_margin="5dp"
+                    android:layout_margin="2dp"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_columnWeight="1"
@@ -84,7 +86,7 @@
                     android:text="Sale"/>
                 <ImageView
                     android:id="@+id/button_to_store_screen"
-                    android:layout_margin="5dp"
+                    android:layout_margin="2dp"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_columnWeight="1"
@@ -92,7 +94,450 @@
                     android:background="@drawable/img_button_store"
                     android:text="Store"/>
             </GridLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="24sp"
+                    android:text="ƯU ĐÃI ĐẶC BIỆT"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:text="Xem tất cả"/>
+            </LinearLayout>
 
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Hình ảnh -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/combo1"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/image" />
+
+                        <!-- Tiêu đề -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMBO1"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <!-- Thông tin -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Basket ‘O’ Fries\n1 Cheesy Garlic Bread\n1 Caesar Salad\n1 Famous Chicken Wings"
+                            android:textSize="14sp" />
+
+                        <!-- Giá -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="109.000đ"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button_decrease"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/count_product"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/button_increase"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="+" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Hình ảnh -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/combo1"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/image" />
+
+                        <!-- Tiêu đề -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMBO1"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <!-- Thông tin -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Basket ‘O’ Fries\n1 Cheesy Garlic Bread\n1 Caesar Salad\n1 Famous Chicken Wings"
+                            android:textSize="14sp" />
+
+                        <!-- Giá -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="109.000đ"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button_decrease1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/count_product1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/button_increase1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="+" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Hình ảnh -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/combo1"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/image" />
+
+                        <!-- Tiêu đề -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMBO1"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <!-- Thông tin -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Basket ‘O’ Fries\n1 Cheesy Garlic Bread\n1 Caesar Salad\n1 Famous Chicken Wings"
+                            android:textSize="14sp" />
+
+                        <!-- Giá -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="109.000đ"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button_decrease2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/count_product2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/button_increase2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="+" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Hình ảnh -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/combo1"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/image" />
+
+                        <!-- Tiêu đề -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMBO1"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <!-- Thông tin -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Basket ‘O’ Fries\n1 Cheesy Garlic Bread\n1 Caesar Salad\n1 Famous Chicken Wings"
+                            android:textSize="14sp" />
+
+                        <!-- Giá -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="109.000đ"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button_decrease3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/count_product3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/button_increase3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="+" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Hình ảnh -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/combo1"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/image" />
+
+                        <!-- Tiêu đề -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMBO1"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <!-- Thông tin -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Basket ‘O’ Fries\n1 Cheesy Garlic Bread\n1 Caesar Salad\n1 Famous Chicken Wings"
+                            android:textSize="14sp" />
+
+                        <!-- Giá -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="109.000đ"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/button_decrease4"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/count_product4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/button_increase4"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="+" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/news"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textAlignment="center"
+                        android:text="TIN TỨC"
+                        android:textSize="24sp" />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:text="Xem tất cả"/>
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_margin="4dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/helloo"/>
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:text="Chào bữa sáng"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/helloo"/>
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:text="Chào bữa trưa"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/helloo"/>
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:text="Chào bữa chiều"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/helloo"/>
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:text="Chào bữa tối"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
