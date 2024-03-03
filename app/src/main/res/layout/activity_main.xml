@@ -50,7 +50,9 @@
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/header_title" />
+        android:layout_below="@id/header_title"
+        android:layout_above="@+id/bottom_navigation"
+        />
 
     <!-- Bottom Navigation View -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -58,10 +60,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/red_mix_pink"
+        android:background="@color/grey"
         app:labelVisibilityMode="labeled"
         app:itemTextColor="@color/color_navigation"
         app:itemIconTint="@color/color_navigation"
         app:menu="@menu/menu_navigation"
         />
+
 </RelativeLayout>
