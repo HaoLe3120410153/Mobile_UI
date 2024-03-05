@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -13,28 +14,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-
-        <!-- Chỉ khai báo một hoạt động chính của ứng dụng -->
-        <activity android:name=".Screens.StartAppScreen"
+        <activity
+            android:name=".ProductScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Chỉ khai báo một hoạt động chính của ứng dụng -->
+        <activity
+            android:name=".Screens.StartAppScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".Screens.MainActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Screens.SignupScreen"
             android:exported="true" />
-
         <activity
             android:name=".Screens.LoginScreen"
             android:exported="true" />
-
     </application>
 
 </manifest>
