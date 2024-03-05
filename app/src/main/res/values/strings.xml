@@ -6,5 +6,8 @@
     <string name="home_button_description">Trang chủ</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="image">ảnh 1</string>
-
+    <string name="COCAIngredients">COCA M</string>
+    <string name="PEPSIIngredients">PEPSI M</string>
+    <string name="COCALIngredients">COCA L</string>
+    <string name="PEPSILIngredients">PEPSI L</string>
 </resources>
