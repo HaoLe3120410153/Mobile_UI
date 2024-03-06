@@ -1,22 +1,14 @@
 package com.example.myapplication.fragment;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-
 import com.example.myapplication.R;
 
-///**
-// * A simple {@link Fragment} subclass.
-// * Use the {@link fragment_order#newInstance} factory method to
-// * create an instance of this fragment.
-// */
 public class fragment_order extends Fragment {
 
     @Override
@@ -27,20 +19,52 @@ public class fragment_order extends Fragment {
 
         // Lấy tham chiếu tới LinearLayout và thiết lập sự kiện click
         LinearLayout bestSellerLayout = rootView.findViewById(R.id.best_seller);
+        LinearLayout saleLayout = rootView.findViewById(R.id.sale);
+        LinearLayout pizzaLayout = rootView.findViewById(R.id.pizza);
+        LinearLayout friedChickenLayout = rootView.findViewById(R.id.fried_chicken);
+        LinearLayout burgerLayout = rootView.findViewById(R.id.burger);
+
         bestSellerLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeFragment();
+                changeFragment(new order_fragment_bestseller());
             }
         });
 
+        saleLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeFragment(new order_fragment_sale());
+            }
+        });
+
+        pizzaLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeFragment(new order_fragment_pizza());
+            }
+        });
+
+        friedChickenLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeFragment(new order_fragment_friedchicken());
+            }
+        });
+
+        burgerLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeFragment(new order_fragment_burger());
+            }
+        });
+
+        changeFragment(new order_fragment_bestseller());
         return rootView;
     }
 
-    private void changeFragment() {
-        // Xử lý sự kiện khi click vào LinearLayout ở đây
-        Fragment newFragment = new order_fragment_bestseller(); // Thay YourNewFragment bằng Fragment mới bạn muốn hiển thị
-        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+    private void changeFragment(Fragment newFragment) {
+        FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_layout_order, newFragment);
         transaction.addToBackStack(null);
         transaction.commit();

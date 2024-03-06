@@ -15,10 +15,17 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Screens.DeliveryScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.PayScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.CartScreen"
+            android:exported="false" />
+        <activity
             android:name=".ProductScreen"
-            android:exported="true">
-        </activity>
-        <!-- Chỉ khai báo một hoạt động chính của ứng dụng -->
+            android:exported="true" /> <!-- Chỉ khai báo một hoạt động chính của ứng dụng -->
         <activity
             android:name=".Screens.StartAppScreen"
             android:exported="true">
@@ -30,7 +37,7 @@
         </activity>
         <activity
             android:name=".Screens.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Screens.SignupScreen"
             android:exported="true" />

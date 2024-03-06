@@ -1,27 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".fragment.fragment_order">
-    <LinearLayout
-        android:id="@+id/layout_order_head"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Screens.DeliveryScreen">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Delivery"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
                 <LinearLayout
-                    android:id="@+id/best_seller"
+                    android:id="@+id/completedOrder"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:clickable="true"
@@ -33,18 +46,17 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:background="@drawable/image_background_selector"
-                        android:src="@drawable/img_bestseller" />
+                        android:background="@color/light_pink"
+                        android:src="@drawable/delivered" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Bestseller"
+                        android:text="DELIVERED"
                         android:textColor="@color/text_color_selector" />
                 </LinearLayout>
-
                 <LinearLayout
-                    android:id="@+id/sale"
+                    android:id="@+id/DeliveringOrder"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:clickable="true"
@@ -56,18 +68,17 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:background="@drawable/image_background_selector"
-                        android:src="@drawable/img_bestseller" />
+                        android:background="@color/light_pink"
+                        android:src="@drawable/delivering" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Khuyến mãi"
+                        android:text="IN TRANSIT"
                         android:textColor="@color/text_color_selector" />
                 </LinearLayout>
-
                 <LinearLayout
-                    android:id="@+id/pizza"
+                    android:id="@+id/preparing"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:clickable="true"
@@ -79,18 +90,17 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:background="@drawable/image_background_selector"
-                        android:src="@drawable/img_bestseller" />
+                        android:background="@color/light_pink"
+                        android:src="@drawable/preparing" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pizza"
+                        android:text="PREPARING"
                         android:textColor="@color/text_color_selector" />
                 </LinearLayout>
-
                 <LinearLayout
-                    android:id="@+id/fried_chicken"
+                    android:id="@+id/canceled"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:clickable="true"
@@ -102,47 +112,21 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:background="@drawable/image_background_selector"
-                        android:src="@drawable/img_bestseller" />
+                        android:background="@color/light_pink"
+                        android:src="@drawable/canceled" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Gà Rán"
+                        android:text="CANCELED"
                         android:textColor="@color/text_color_selector" />
                 </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/burger"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:gravity="center"
-                    android:onClick="changeFragment"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:background="@drawable/image_background_selector"
-                        android:src="@drawable/img_bestseller" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Burger"
-                        android:textColor="@color/text_color_selector" />
-                </LinearLayout>
-
             </LinearLayout>
         </HorizontalScrollView>
     </LinearLayout>
     <FrameLayout
         android:layout_weight="1"
-        android:id="@+id/frame_layout_order"
+        android:id="@+id/frame_layout_delivery"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/layout_order_head"
-        />
+        android:layout_height="match_parent"/>
 </LinearLayout>
