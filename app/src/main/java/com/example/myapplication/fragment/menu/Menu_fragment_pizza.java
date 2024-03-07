@@ -1,4 +1,4 @@
-package com.example.myapplication.fragment;
+package com.example.myapplication.fragment.menu;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.myapplication.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link order_fragment_friedchicken#newInstance} factory method to
+ * Use the {@link Menu_fragment_pizza#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class order_fragment_friedchicken extends Fragment {
+public class Menu_fragment_pizza extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class order_fragment_friedchicken extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public order_fragment_friedchicken() {
+    public Menu_fragment_pizza() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class order_fragment_friedchicken extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment order_fragment_friedchicken.
+     * @return A new instance of fragment order_fragment_pizza.
      */
     // TODO: Rename and change types and number of parameters
-    public static order_fragment_friedchicken newInstance(String param1, String param2) {
-        order_fragment_friedchicken fragment = new order_fragment_friedchicken();
+    public static Menu_fragment_pizza newInstance(String param1, String param2) {
+        Menu_fragment_pizza fragment = new Menu_fragment_pizza();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class order_fragment_friedchicken extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_order_friedchicken, container, false);
+        return inflater.inflate(R.layout.fragment_menu_pizza, container, false);
     }
 }

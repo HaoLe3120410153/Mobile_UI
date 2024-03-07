@@ -25,7 +25,12 @@ public class PayScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
 
 
+    public void goBackToCartScreen(View view) {
+        // Tạo một Intent để quay về MainActivity
+        Intent intent = new Intent(this, CartScreen.class);
+        startActivity(intent); // Bắt đầu activity mới
     }
 }

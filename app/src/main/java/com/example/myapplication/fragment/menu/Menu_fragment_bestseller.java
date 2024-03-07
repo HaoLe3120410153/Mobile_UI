@@ -1,4 +1,4 @@
-package com.example.myapplication.fragment;
+package com.example.myapplication.fragment.menu;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,15 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.myapplication.ProductScreen;
+import com.example.myapplication.Screens.ProductScreen;
 import com.example.myapplication.R;
 
-public class order_fragment_bestseller extends Fragment {
+public class Menu_fragment_bestseller extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_order_bestseller, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_menu_bestseller, container, false);
 
         // Find the view that you want to set the click listener on
         View productLayout = rootView.findViewById(R.id.product1);

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -52,7 +53,10 @@ public class DeliveryScreen extends AppCompatActivity {
         transaction.addToBackStack(null);
         transaction.commit();
     }
-
-
+    public void goBackToPayScreen(View view) {
+        // Tạo một Intent để quay về MainActivity
+        Intent intent = new Intent(this, PayScreen.class);
+        startActivity(intent); // Bắt đầu activity mới
+    }
 
 }

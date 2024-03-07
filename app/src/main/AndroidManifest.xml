@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Screens.StartAppScreen"
+            android:exported="true" />
+        <activity
             android:name=".Screens.DeliveryScreen"
             android:exported="false" />
         <activity
@@ -24,11 +27,12 @@
             android:name=".Screens.CartScreen"
             android:exported="false" />
         <activity
-            android:name=".ProductScreen"
-            android:exported="true" /> <!-- Chỉ khai báo một hoạt động chính của ứng dụng -->
+            android:name=".Screens.ProductScreen"
+            android:exported="false" /> <!-- Chỉ khai báo một hoạt động chính của ứng dụng -->
         <activity
-            android:name=".Screens.StartAppScreen"
-            android:exported="true">
+            android:name=".Screens.SplashActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

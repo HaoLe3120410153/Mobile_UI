@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Screens;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.myapplication.R;
 import com.example.myapplication.adapter.ListAdapter;
 import com.example.myapplication.data.ListDinksData;
-import com.example.myapplication.databinding.ActivityMainBinding;
 import com.example.myapplication.databinding.ActivityProductScreenBinding;
 
 import java.util.ArrayList;

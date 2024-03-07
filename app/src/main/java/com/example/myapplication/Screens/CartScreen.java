@@ -12,6 +12,7 @@ import com.example.myapplication.R;
 public class CartScreen extends AppCompatActivity {
 
     private Button buttonOrder;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +26,11 @@ public class CartScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void goBackToMainActivity(View view) {
+        // Tạo một Intent để quay về MainActivity
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent); // Bắt đầu activity mới
     }
 }

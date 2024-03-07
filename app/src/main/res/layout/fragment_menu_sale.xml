@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.order_fragment_friedchicken">
+    tools:context=".fragment.menu.Menu_fragment_sale">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

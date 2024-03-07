@@ -38,7 +38,6 @@ public class fragment_account extends Fragment {
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Điều hướng đến màn hình đăng ký
                 Intent intent = new Intent(getActivity(), SignupScreen.class);
                 startActivity(intent);
             }

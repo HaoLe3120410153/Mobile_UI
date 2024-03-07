@@ -8,6 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import com.example.myapplication.R;
+import com.example.myapplication.fragment.menu.Menu_fragment_bestseller;
+import com.example.myapplication.fragment.menu.Menu_fragment_burger;
+import com.example.myapplication.fragment.menu.Menu_fragment_friedchicken;
+import com.example.myapplication.fragment.menu.Menu_fragment_pizza;
+import com.example.myapplication.fragment.menu.Menu_fragment_sale;
 
 public class fragment_order extends Fragment {
 
@@ -27,39 +32,39 @@ public class fragment_order extends Fragment {
         bestSellerLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeFragment(new order_fragment_bestseller());
+                changeFragment(new Menu_fragment_bestseller());
             }
         });
 
         saleLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeFragment(new order_fragment_sale());
+                changeFragment(new Menu_fragment_sale());
             }
         });
 
         pizzaLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeFragment(new order_fragment_pizza());
+                changeFragment(new Menu_fragment_pizza());
             }
         });
 
         friedChickenLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeFragment(new order_fragment_friedchicken());
+                changeFragment(new Menu_fragment_friedchicken());
             }
         });
 
         burgerLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeFragment(new order_fragment_burger());
+                changeFragment(new Menu_fragment_burger());
             }
         });
 
-        changeFragment(new order_fragment_bestseller());
+        changeFragment(new Menu_fragment_bestseller());
         return rootView;
     }
 
